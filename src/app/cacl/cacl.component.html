@@ -1,0 +1,17 @@
+<!-- <p>
+  I heard {{ msg }}
+</p> -->
+<div class="form-floating mb-3 col-6">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [value]="msg">
+  <label for="floatingInput">text</label>
+</div>
+<div>
+  <button class="btn btn-primary" (click)="voiceStart()">Start voice recognition</button>
+
+  <button class="btn btn-primary" (click)="voiceStop()">Stop voice recognition</button>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  [value]="conversation"></textarea>
+</div>
+<button class="wave" id="mic" title="Start / stop"></button>
